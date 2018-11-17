@@ -10,4 +10,3 @@ services:
     - "4000:4000"
     entrypoint: ["sh", "-c"]
     command: ["yarn install && node index.js"]
-#    command: ["yarn install "]
