@@ -1,4 +1,4 @@
-CONTAINER=server
+CONTAINER=graphql-server
 
 MAKE = make --no-print-directory
 DOCKER = docker
