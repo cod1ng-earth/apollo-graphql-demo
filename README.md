@@ -6,6 +6,6 @@ Demo setup with [VueJs](https://vuejs.org/), [Apollo Server](https://www.apollog
 
 - Run `make setup`
 - To open the server in the browser, go to [http://localhost:4000/graphql](http://localhost:4000/graphql)
-
+- To open the client in the browser, go to [http://localhost:8080/](http://localhost:8080/)
 
 

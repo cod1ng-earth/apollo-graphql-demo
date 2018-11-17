@@ -10,3 +10,14 @@ services:
     - "4000:4000"
     entrypoint: ["sh", "-c"]
     command: ["yarn install && node index.js"]
+  graphql-client:
+    build:
+      context: .
+      dockerfile: client/docker/node/Dockerfile
+    volumes:
+    - ./client:/usr/src/app
+    ports:
+    - "8080:8080"
+    - "8000:8000"
+    entrypoint: ["sh", "-c"]
+    command: ["yarn install && yarn serve"]

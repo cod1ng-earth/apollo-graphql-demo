@@ -1,4 +1,5 @@
-CONTAINER=graphql-server
+CONTAINER_SERVER=graphql-server
+CONTAINER_CLIENT=graphql-client
 
 MAKE = make --no-print-directory
 DOCKER = docker
@@ -75,9 +76,13 @@ yarn-install: ##@development run 'yarn install'
 	$(DOCKER_COMPOSE) exec $(CONTAINER) yarn install
 .PHONY: yarn-install
 
-cli: ##@development get shell
-	$(DOCKER_COMPOSE) exec $(CONTAINER) sh
-.PHONY: cli
+cli-client: ##@development get shell in client container
+	$(DOCKER_COMPOSE) exec $(CONTAINER_CLIENT) sh
+.PHONY: cli-client
+
+cli-server: ##@development get shell in server container
+	$(DOCKER_COMPOSE) exec $(CONTAINER_SERVER) sh
+.PHONY: cli-server
 
 logs: ##@development show server logs
 	$(DOCKER_COMPOSE) logs -f
