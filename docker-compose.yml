@@ -1,0 +1,13 @@
+version: "3.1"
+services:
+  graphql-server:
+    build:
+      context: .
+      dockerfile: server/docker/node/Dockerfile
+    volumes:
+    - ./server:/usr/src/app
+    ports:
+    - "4000:4000"
+    entrypoint: ["sh", "-c"]
+    command: ["yarn install && node index.js"]
+#    command: ["yarn install "]
