@@ -1,7 +1,7 @@
 const _ = require('lodash');
 const data = require('../data/db');
 
-module.exports = {
+export default {
     typeDef: `
     extend type Query {
         books: [Book]
