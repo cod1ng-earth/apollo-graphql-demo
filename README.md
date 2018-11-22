@@ -2,6 +2,13 @@
 
 Demo setup with [VueJs](https://vuejs.org/), [Apollo Server](https://www.apollographql.com/docs/apollo-server/) &amp; [Apollo Client](https://github.com/Akryum/vue-apollo)
 
+## Configuration
+
+- If you want to use the YouTube API, copy the `.env.dist` file to `.env` 
+  and add your API key there as an env var.  
+  After changing env vars while already running the Docke rcontainer, 
+  you have to restart your containers (`make restart`) 
+
 ## Setup
 
 - Run `make setup`
