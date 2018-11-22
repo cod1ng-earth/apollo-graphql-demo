@@ -16,7 +16,10 @@ const httpLink = new HttpLink({
 // Create the apollo client
 const apolloClient = new ApolloClient({
     link: httpLink,
-    cache: new InMemoryCache(),
+    // cache: new InMemoryCache(),
+    cache: new InMemoryCache({
+        dataIdFromObject: o => (o._id ? `${o.__typename}:${o._id}`: null),
+    }),
     connectToDevTools: true,
 })
 

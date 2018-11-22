@@ -12,3 +12,7 @@ Demo setup with [VueJs](https://vuejs.org/), [Apollo Server](https://www.apollog
 
 - basic demo with a simple schema on static data (JS array).
 - how to use a REST API as a datasource with XKCD API 
+
+## Basic intro into GraphQL 
+
+- [Slideshare: basic GraphQL intro](https://www.slideshare.net/berndalter7/graphql-in-symfony)

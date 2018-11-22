@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="navigation">
-            <router-link :to="{ name: 'discogs-search-artists'}">Search artists</router-link>
+            <!--<router-link :to="{ name: 'discogs-search-artists'}">Search artists</router-link>-->
         </div>
     </section>
 </template>

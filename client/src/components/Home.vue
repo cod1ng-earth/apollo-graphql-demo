@@ -20,8 +20,10 @@
       </li>
     </ul>
     <p>
-      <a href="https://github.com/coding-berlin/apollo-graphql-demo">Github repository</a>
       <a href="https://www.slideshare.net/berndalter7/graphql-in-symfony">Slideshare: basic GraphQL intro</a>
+    </p>
+    <p>
+      <a href="https://github.com/coding-berlin/apollo-graphql-demo">Github repository for this application</a>
     </p>
   </div>
 </template>

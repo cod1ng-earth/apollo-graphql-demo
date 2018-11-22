@@ -1,6 +1,6 @@
 <template>
     <section v-if="search">
-        <you-tube-player-embedded v-for="video in videos"
+        <you-tube-player-embedded v-for="video in videos()" :key="video.etag"
                                   :video-id="video.id.videoId"
         >
         </you-tube-player-embedded>
@@ -24,8 +24,10 @@
             YouTubePlayerEmbedded
         },
 
-        computed: {
-            videos() {
+        methods: {
+            videos: function() {
+                console.log(this.search)
+                console.log(this.search.items)
                 return this.search.items;
             }
         },
