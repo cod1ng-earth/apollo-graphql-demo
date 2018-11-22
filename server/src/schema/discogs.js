@@ -9,6 +9,7 @@ export default {
         profile: String
         uri: String
         urls: [String]
+        images: [DiscogsImage]
     }
     type DiscogsImage {
         uri: String

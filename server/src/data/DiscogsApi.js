@@ -13,9 +13,5 @@ export default class DiscogsApi extends RESTDataSource {
     async searchForArtists(searchTerm) {
         return this.get(`/database/search?q=${searchTerm}&type=artist`);
     }
-
-    // getRandomHash() {
-    //     return '#_' + Math.random().toString(36).substr(2, 9);
-    // }
 }
 
