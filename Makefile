@@ -73,7 +73,8 @@ rebuild: ##@development removes images
 .PHONY: rebuild
 
 yarn-install: ##@development run 'yarn install'
-	$(DOCKER_COMPOSE) exec $(CONTAINER) yarn install
+	$(DOCKER_COMPOSE) exec $(CONTAINER_CLIENT) yarn install
+	$(DOCKER_COMPOSE) exec $(CONTAINER_SERVER) yarn install
 .PHONY: yarn-install
 
 cli-client: ##@development get shell in client container
