@@ -3,6 +3,8 @@
     <div class="header">
       <img id="logo" alt="Coding Berlin logo" src="./assets/logo-codingberlin.jpg">
       <h1>GraphQL<br>Meetup<br>22.11.2018</h1>
+      <img id="logo-apollo" alt="Apollo logo" src="./assets/apollo-logo.png">
+      <img id="logo-graphql" alt="GraphQL logo" src="./assets/graphql-logo.png">
     </div>
     <div id="app">
 
@@ -53,6 +55,16 @@ export default {
   .header img {
     width: 75%;
     margin: 10px 0;
+  }
+
+  .header img#logo-apollo {
+    width: 30%;
+    margin: 1em;
+  }
+
+  .header img#logo-graphql {
+    width: 30%;
+    margin: 1em;
   }
 
   .header h1 {
