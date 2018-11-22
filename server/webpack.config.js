@@ -35,7 +35,10 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         new webpack.DefinePlugin({
-            'process.env': { BUILD_TARGET: JSON.stringify('server') }
+            'process.env': {
+                BUILD_TARGET: JSON.stringify('server'),
+                API_KEY_YOUTUBE: JSON.stringify(process.env.API_KEY_YOUTUBE)
+            }
         })
     ],
     output: { path: path.join(__dirname, 'dist'), filename: 'server.js' }

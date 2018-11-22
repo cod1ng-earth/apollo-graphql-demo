@@ -7,14 +7,14 @@ export default class XkcdAPI extends RESTDataSource {
     }
 
     async getComic(comicId) {
-        return this.get(`${comicId}/info.0.json` + this.getRandomHash());
+        return this.get(`${comicId}/info.0.json` + XkcdAPI.getRandomHash());
     }
 
     async getComicOfTheDay() {
-        return this.get(`info.0.json` + this.getRandomHash());
+        return this.get(`info.0.json` + XkcdAPI.getRandomHash());
     }
 
-    getRandomHash() {
+    static getRandomHash() {
         return '#_' + Math.random().toString(36).substr(2, 9);
     }
 }

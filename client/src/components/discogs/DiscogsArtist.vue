@@ -10,11 +10,15 @@
                 <a :href="url" target="_blank">{{ url }}</a>
             </li>
         </ul>
+
+        <you-tube-videos :search-term="artist.name">
+        </you-tube-videos>
     </section>
 </template>
 
 <script>
     import DiscogsNavigation from './DiscogsNavigation'
+    import YouTubeVideos from "../youtube/YouTubeVideos";
     import gql from 'graphql-tag'
 
     export default {
@@ -25,7 +29,8 @@
         },
 
         components: {
-            DiscogsNavigation
+            DiscogsNavigation,
+            YouTubeVideos,
         },
 
         apollo: {

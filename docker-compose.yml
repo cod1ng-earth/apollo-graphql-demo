@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: server/docker/node/Dockerfile
+    environment:
+      - API_KEY_YOUTUBE
     volumes:
     - ./server:/usr/src/app
     ports:
