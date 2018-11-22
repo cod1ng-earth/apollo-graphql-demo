@@ -8,4 +8,7 @@ Demo setup with [VueJs](https://vuejs.org/), [Apollo Server](https://www.apollog
 - To open the server in the browser, go to [http://localhost:4000/graphql](http://localhost:4000/graphql)
 - To open the client in the browser, go to [http://localhost:8080/](http://localhost:8080/)
 
+## Demos
 
+- basic demo with a simple schema on static data (JS array).
+- how to use a REST API as a datasource with XKCD API 
