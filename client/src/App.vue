@@ -7,9 +7,10 @@
     <div id="app">
 
       <div class="navigation">
-        <router-link to="/">Home</router-link>
-        <router-link to="/books">Books</router-link>
-        <router-link to="/xkcd">xkcd</router-link>
+        <router-link :to="{ name: 'home' }">Home</router-link>
+        <router-link :to="{ name: 'books' }">Books</router-link>
+        <router-link :to="{ name: 'xkcd' }">xkcd</router-link>
+        <router-link :to="{ name: 'discogs-home' }">Discogs</router-link>
       </div>
       <router-view/>
     </div>

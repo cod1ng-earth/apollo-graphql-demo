@@ -1,7 +1,7 @@
-import XkcdAPI from './data/XkcdAPI';
-
 const { ApolloServer, gql } = require('apollo-server-express');
 
+import DiscogsApi from "./data/DiscogsApi";
+import XkcdAPI from './data/XkcdAPI';
 import { schema } from './schema';
 
 export const server = new ApolloServer({
@@ -9,7 +9,7 @@ export const server = new ApolloServer({
     dataSources: () => {
         return {
             xkcd: new XkcdAPI(),
+            discogs: new DiscogsApi(),
         };
     },
 });
-
